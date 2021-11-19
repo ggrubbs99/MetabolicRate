@@ -36,7 +36,10 @@ $(document).ready(function () {
                             dateWindow: [date_win_min, date_win_max],
                             // valueRange: [980, 1020],
                             labels: ['Time', 'Metabolic Rate'],
-                            showRangeSelector: true
+                            showRangeSelector: true,
+                            xlabel: "Time",
+                            ylabel: "Calories Burned",
+                            connectSeparatedPoints: true
                           });
 
        function onLine(v) {

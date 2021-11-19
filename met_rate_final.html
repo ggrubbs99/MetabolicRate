@@ -22,7 +22,7 @@ $(document).ready(function () {
       var xconnect = document.getElementById("myPuck_connect");
       var savemy_CSV = document.getElementById("my_Savedata");
       var rec_startstop = document.getElementById("myrecord_start"); 
-      var taxis_increment = 10 * 1000;           /// axis increment in milliseconds
+      var taxis_increment = 30000 * 1000;           /// axis increment in milliseconds
       var t = new Date();
       data.push([t, 1000.000]);
       var date_win_min = t.getTime();
@@ -35,7 +35,7 @@ $(document).ready(function () {
                             digitsAfterDecimal: 3,
                             dateWindow: [date_win_min, date_win_max],
                             // valueRange: [980, 1020],
-                            labels: ['Time', 'Pressure'],
+                            labels: ['Time', 'Metabolic Rate'],
                             showRangeSelector: true
                           });
 
